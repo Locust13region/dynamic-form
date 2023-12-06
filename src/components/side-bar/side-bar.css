@@ -1,0 +1,87 @@
+.sideBar {
+	padding: 10px;
+}
+
+.searchField {
+	width: 100%;
+	font-size: medium;
+	padding: 7px;
+	outline: none;
+}
+
+.searchField::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	appearance: none;
+	background: url("../menu/icons/cross.svg") center center/50% auto no-repeat;
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+}
+
+.searchField::-moz-cancel-button {
+	background: url("../menu/icons/cross.svg") center center/50% auto no-repeat;
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+}
+
+.accordion {
+	margin-top: 15px;
+	> a {
+		width: 100%;
+		font-size: medium;
+		font-weight: 500;
+		padding: 5px;
+	}
+}
+.accordionItem {
+	display: block;
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: 1px solid #ccc;
+	text-align: left;
+	outline: none;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+.active,
+.accordionItem:hover {
+	background-color: #ccc;
+}
+
+.panel {
+	padding: 0 8px;
+	background-color: white;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	animation-name: panelAnim;
+	animation-duration: 1.5s;
+	> div {
+		color: #fff;
+		background-color: cornflowerblue;
+		margin: 5px 0;
+		padding: 5px;
+		border-radius: 5px;
+		font-size: small;
+		transition: 0.2s;
+	}
+	> div:hover {
+		background-color: rgb(80, 132, 229);
+		cursor: pointer;
+	}
+}
+@keyframes panelAnim {
+	from {
+		max-height: 0;
+	}
+	to {
+		max-height: 400px;
+	}
+}
+svg {
+	margin: 0 5px;
+}
