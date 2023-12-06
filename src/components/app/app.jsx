@@ -32,7 +32,6 @@ function App() {
 			/>
 			<Routes>
 				<Route
-					exact
 					path="/"
 					element={
 						<Fields
@@ -44,7 +43,7 @@ function App() {
 					}
 				/>
 				<Route
-					path="data"
+					path="/data"
 					element={<Data formContent={formContent} />}
 				/>
 			</Routes>

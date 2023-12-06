@@ -6,7 +6,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<Router basename="/dynamic-form">
+		<Router basename="/dynamic-form/">
 			<App />
 		</Router>
 	</React.StrictMode>

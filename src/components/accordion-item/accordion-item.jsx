@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+
 const AccordionItem = ({
 	title,
 	index,
@@ -12,7 +12,7 @@ const AccordionItem = ({
 	return (
 		<>
 			<Link
-				to={index !== 3 ? "/" : "data"}
+				to={index !== 3 ? "/" : "/data"}
 				className="accordionItem"
 				onClick={() => {
 					setActive(index);
