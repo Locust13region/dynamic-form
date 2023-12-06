@@ -1,5 +1,4 @@
-import React from "react";
-
+import PropTypes from "prop-types";
 const Fields = ({
 	formContent,
 	formReadOnly,
@@ -25,6 +24,12 @@ const Fields = ({
 	);
 };
 
+Fields.propTypes = {
+	formContent: PropTypes.array,
+	formReadOnly: PropTypes.bool,
+	saveElementValue: PropTypes.func,
+	deleteElement: PropTypes.func,
+};
 export default Fields;
 
 const Form = ({
@@ -57,4 +62,14 @@ const Form = ({
 			</div>
 		</div>
 	);
+};
+
+Form.propTypes = {
+	label: PropTypes.string,
+	element: PropTypes.func,
+	value: PropTypes.string,
+	formReadOnly: PropTypes.bool,
+	saveElementValue: PropTypes.func,
+	deleteElement: PropTypes.func,
+	index: PropTypes.number,
 };
